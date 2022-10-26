@@ -1,0 +1,13 @@
+---
+layout: default
+title: Romina Rissetto
+---
+<div class="blurb">
+	<h1>Projects</h1>
+	<p>Sample.</p>
+	
+	 {% for post in site.projects %}
+	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	
+</div><!-- /.blurb -->
