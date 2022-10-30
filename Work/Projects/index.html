@@ -6,8 +6,11 @@ title: Romina Rissetto
 	<h1>Projects</h1>
 	<p>Sample.</p>
 	
-	 {% for post in site.projects %}
-	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-	  {% endfor %}
+	{% for post in site.projects %}
+  	    <li>
+	      <b><a class="post-title" href="{{ post.url }}">{{ post.title }}</a></b>
+	      <p class="post-date">{{ post.date | date_to_long_string}}</p>
+	    </li>
+	{% endfor %}
 	
 </div><!-- /.blurb -->
